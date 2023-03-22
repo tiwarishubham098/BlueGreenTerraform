@@ -9,11 +9,11 @@ resource "aws_instance" "blue" {
   vpc_security_group_ids = [aws_security_group.web.id]
 
   user_data = templatefile("./init-script.sh", {
-    file_content = "blue version 1.2 - ${count.index}"
+    file_content = "blue version 1.0 - ${count.index}"
   })
 
   tags = {
-    Name = "blue version 1.2 - ${count.index}"
+    Name = "blue version 1.0 - ${count.index}"
   }
 }
 
