@@ -1,9 +1,9 @@
 locals {
-  vpc_id              = "vpc-08a51e4a8e1a4226b"
-  private_a_subnet_id = "subnet-0e0317ff5d26c8b12"
-  private_b_subnet_id = "subnet-0f4ec7d0ea60605bd"
-  public_a_subnet_id  = "subnet-09316aa45c8669d28"
-  public_b_subnet_id  = "subnet-08c7b53b2ca1d202b"
+  vpc_id              = "vpc-04de07d7d900e861b"
+  private_a_subnet_id = "subnet-0388535feef41d5d5"
+  private_b_subnet_id = "subnet-0357b0490d13485e3"
+  public_a_subnet_id  = "subnet-0e00662d1db429c77"
+  public_b_subnet_id  = "subnet-07647f81964571d10"
 
   ubuntu_ami = "ami-042e8287309f5df03"
 
@@ -32,7 +32,7 @@ locals {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 # Security Group
