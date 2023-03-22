@@ -5,7 +5,7 @@ locals {
   public_a_subnet_id  = "subnet-0e00662d1db429c77"
   public_b_subnet_id  = "subnet-07647f81964571d10"
 
-  ubuntu_ami = "ami-042e8287309f5df03"
+  ubuntu_ami = "ami-0f8ca728008ff5af4"
 
   traffic_dist_map = {
     blue = {
